@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateToDosTable extends Migration
+class CreateEmployeesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateToDosTable extends Migration
      */
     public function up()
     {
-        Schema::create('to_dos', function (Blueprint $table) {
+        Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('detail')->nullable();
-            $table->char('status', 1);
+            $table->string('nip')->unique();
+            $table->string('name');
+            $table->text('address');
+            $table->date('date_of_birth');
+            $table->date('date_join');
             $table->timestamps();
-            $table->softDeletes('deleted_at');
         });
     }
 
@@ -30,6 +31,6 @@ class CreateToDosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('to_dos');
+        Schema::dropIfExists('employees');
     }
 }

@@ -38,6 +38,18 @@
             color: #007BFF !important;
             background: #F3F3F3 !important;
         }
+
+        .navbar .navbar-nav a.active {
+            font-weight: bold !important;
+        }
+
+        table thead tr {
+            font-size: 14px;
+        }
+
+        table tbody tr {
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
