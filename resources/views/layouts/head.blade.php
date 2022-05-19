@@ -14,41 +14,8 @@
     <script src="{{ asset('plugins/zebra-dialog/dist/zebra_dialog.min.js') }}"></script>
     <title>{{ $title }}</title>
     <style>
-        body {
-            background: #F3F3F3;
-        }
-
-        .nowrap {
-            white-space: nowrap;
-        }
-
-        .btn:focus {
-            outline: none;
-            box-shadow: none;
-        }
-
-        .btn-outline-primary:hover {
-            border: 1px solid #007BFF;
-            color: #007BFF;
-            background: #F3F3F3;
-        }
-
-        .btn-outline-primary:active {
-            border: 1px solid #007BFF !important;
-            color: #007BFF !important;
-            background: #F3F3F3 !important;
-        }
-
-        .navbar .navbar-nav a.active {
-            font-weight: bold !important;
-        }
-
-        table thead tr {
-            font-size: 14px;
-        }
-
-        table tbody tr {
-            font-size: 12px;
+        td, th {
+            font-size: 11px;
         }
     </style>
 </head>
