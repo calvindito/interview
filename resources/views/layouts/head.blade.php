@@ -14,8 +14,8 @@
     <script src="{{ asset('plugins/zebra-dialog/dist/zebra_dialog.min.js') }}"></script>
     <title>{{ $title }}</title>
     <style>
-        td, th {
-            font-size: 11px;
+        .pointer {
+            cursor: pointer;
         }
     </style>
 </head>
